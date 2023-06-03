@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submission Result</title>
+  <style>
+    /* Add CSS styles for the animation */
+    .submission-result {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    .show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <h1>Submission Result</h1>
+  <div id="submissionResult" class="submission-result">
+    <p>Your form credentials have been submitted. Thank you!</p>
+  </div>
+  <script>
+    // Add JavaScript to show the submission result with animation
+    var submissionResult = document.getElementById('submissionResult');
+    submissionResult.classList.add('show');
+  </script>
+</body>
+</html>

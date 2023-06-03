@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: echoserver-deployment   # Name of the deployment
+spec:
+  replicas: 3   # Number of replicas for the echoserver pods
+  selector:
+    matchLabels:
+      app: echoserver   # Selector to match pods with the label 'app: echoserver'
+  template:
+    metadata:
+      labels:
+        app: echoserver   # Labels for the pods in the deployment
+    spec:
+      containers:
+        - name: echoserver   # Name of the container
+          image: gcr.io/google-containers/echoserver:1.10   # Docker image for the container
+          ports:
+            - containerPort: 8080   # Port number on which the container listens
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: echoserver-service   # Name of the service
+spec:
+  selector:
+    app: echoserver   # Selector to match the pods for the service
+  ports:
+    - protocol: TCP   # Protocol used for the service (TCP in this case)
+      port: 8080   # Port number exposed by the service
+      targetPort: 8080   # Port number on which the pods are listening
+  type: LoadBalancer   # Type of service (LoadBalancer in this case)

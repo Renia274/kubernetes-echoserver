@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input, textarea {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Page</h1>
+  <form action="submit.html" method="POST">   <!-- Form with action and method attributes -->
+    <label for="firstName">First Name:</label>   <!-- Label for the first name input field -->
+    <input type="text" id="firstName" name="firstName" required>   <!-- First name input field -->
+
+    <label for="lastName">Last Name:</label>   <!-- Label for the last name input field -->
+    <input type="text" id="lastName" name="lastName" required>   <!-- Last name input field -->
+
+    <label for="email">Email:</label>   <!-- Label for the email input field -->
+    <input type="email" id="email" name="email" required>   <!-- Email input field -->
+
+    <label for="message">Message:</label>   <!-- Label for the message textarea field -->
+    <textarea id="message" name="message" required></textarea>   <!-- Message textarea field -->
+
+    <button type="submit">Submit</button>   <!-- Submit button -->
+  </form>
+</body>
+</html>

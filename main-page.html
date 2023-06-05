@@ -3,46 +3,43 @@
 <head>
   <title>My Localhost - Main Page</title>
   <style>
-    
     body {
-      transition: background-color 0.5s; /* Adds a transition effect to the background color */
+      transition: background-color 0.5s;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh; /* Sets the height of the body to 100% of the viewport height */
+      height: 100vh;
     }
     .active {
-      background-color: lightblue; /* Defines the background color when the 'active' class is applied */
+      background-color: lightblue;
     }
     h1 {
-      margin-top: 20px; 
-      font-size: 24px; 
+      margin-top: 20px;
+      font-size: 24px;
     }
     img {
-      max-width: 50%; 
-      margin-bottom: 20px; /* Adds margin at the bottom of the image */
+      max-width: 30%; /* Adjust the value here to resize the image */
+      margin-bottom: 20px;
     }
     button {
-      padding: 10px 20px; /* Sets the padding around the button */
-      font-size: 18px; /* Sets the font size of the button text */
+      padding: 10px 20px;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Localhost</h1> 
-  <img src="welcome.jpg" alt="Welcome Image"> 
+  <h1>Welcome to My Localhost</h1>
+  <img src="welcome.jpg" alt="Welcome Image">
   <br><br>
-  <button onclick="myFunction()">Click me</button> 
+  <button onclick="myFunction()">Click me</button>
   <br><br>
-  <a href="form-page.html">Go to Form Page</a> <!-- Anchor element linking to the form page -->
+  <a href="form-page.html">Go to Form Page</a>
   
   <script>
     function myFunction() {
-      document.body.classList.toggle('active'); // JavaScript function to toggle the 'active' class
+      document.body.classList.toggle('active');
     }
   </script>
 </body>
 </html>
-
-These comments provide explanations for each section of the HTML code.

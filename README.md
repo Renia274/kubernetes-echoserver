@@ -19,5 +19,5 @@ To deploy the Echo Server application, follow these steps:
    
 ##Deployment Instructions
 
-To deploy the Echo Server application, follow the instructions from instructions.txt
+To deploy the Echo Server application, follow the instructions from Instructions.txt
 

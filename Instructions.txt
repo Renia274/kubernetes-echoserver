@@ -1,3 +1,10 @@
+-Cloning
+Clone this repository to your local machine:
+
+   git clone https://github.com/Renia274/kubernetes-echoserver.git
+
+-Deployment
+
 1.Change into the repository directory:
 
 cd kubernetes-echoserver
@@ -14,7 +21,7 @@ kubectl port-forward service/echoserver-service 8889:8080
 
 curl -i -X POST -d '{"message": "Hello, echoserver!"}' http://localhost:8889
 
-##Scaling
+-Scaling
 Before you scale up you need to clean up the resources created by the Echo Server deployment, run the following command:
 
 kubectl delete -f echoserver.yaml
@@ -23,7 +30,7 @@ After you clean up the resources and the creation of deployment and service, you
 
 kubectl scale deployment echoserver-deployment --replicas=5
 
-##Monitoring 
+-Monitoring 
 
 Get information about running pods:
 

@@ -43,3 +43,10 @@ kubectl get replicasets
 Get information about deployments:
 
 kubectl get deployments
+
+-server.js file
+For server.js you need the node js to be installed and you also need to run the following commands:
+
+npm init -y
+npm install express
+

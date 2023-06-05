@@ -50,3 +50,11 @@ For server.js you need the node js to be installed and you also need to run the 
 npm init -y
 npm install express
 
+-Access application from web browser:
+
+To access from a web browser you need to run the following command:
+node server.js
+
+After this command you can access the application through http://localhost:8889/
+
+

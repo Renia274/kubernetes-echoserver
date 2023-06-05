@@ -1,9 +1,6 @@
-Change into the repository directory:
+1.Change into the repository directory:
 
 cd kubernetes-echoserver
-
-kubectl apply -f echoserver.yaml
-
 
 2.Apply the Kubernetes configuration file:
 
@@ -18,8 +15,11 @@ kubectl port-forward service/echoserver-service 8889:8080
 curl -i -X POST -d '{"message": "Hello, echoserver!"}' http://localhost:8889
 
 ##Scaling
+Before you scale up you need to clean up the resources created by the Echo Server deployment, run the following command:
 
-To scale up the Echo Server deployment, you can use the following command:
+kubectl delete -f echoserver.yaml
+
+After you clean up the resources and the creation of deployment and service, you can scale up the Echo Server deployment with the following command:
 
 kubectl scale deployment echoserver-deployment --replicas=5
 

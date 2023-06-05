@@ -17,5 +17,7 @@ To deploy the Echo Server application, follow these steps:
 
    git clone https://github.com/Renia274/kubernetes-echoserver.git
    
-##Instructions
+##Deployment Instructions
+
+To deploy the Echo Server application, follow the instructions from instructions.txt
 

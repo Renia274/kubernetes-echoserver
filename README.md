@@ -8,6 +8,7 @@ Before getting started, ensure that you have the following prerequisites install
 
 - Kubernetes cluster
 - kubectl command-line tool
+- Docker Desktop application
 
 ## Deployment
 
